@@ -230,3 +230,14 @@ if __name__ == "__main__":
 ```
 
 This setup evaluates whether the LLM can iteratively exploit a memory corruption vulnerability given a high‑level description and runtime feedback. The local mutation layer helps bridge the gap between a rough LLM output and a precise triggering input.
+
+## Evaluation Results
+
+### Initial Groq results (oss-120b)
+Gpt oss-120b performs in the same speed and also the same success rate as the llama model. - this is for the baseline_19_results.json file
+
+# Initial llama-3.3-70b-versatile results
+This model was used with the groq api key. Therefore, it was much faster than 4o-mini. It did not have any success in one shotting it through 20 tasks
+
+It also had a lot of incomplete tasks indicated by the code 137 error
+all results are in baseline_19_results.json
